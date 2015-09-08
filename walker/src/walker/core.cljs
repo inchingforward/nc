@@ -14,12 +14,11 @@
    :y (/ (q/height) 2)})
 
 (defn update-state [state]
-  (let [choice (rand-int 4)]
-    (case choice
-      0 (assoc state :x (inc (:x state)))
-      1 (assoc state :x (dec (:x state)))
-      2 (assoc state :y (inc (:y state)))
-      3 (assoc state :y (dec (:y state))))))
+  (let [stepx (dec (int (q/random 3))) 
+        stepy (dec (int (q/random 3)))]
+    {:x (+ (:x state) stepx)
+     :y (+ (:y state) stepy)
+     :color (:color state)}))
 
 (defn draw-state [state]
   ; Clear the sketch by filling it with light-grey color.
