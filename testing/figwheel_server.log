@@ -1,6 +1,0 @@
-Figwheel: focusing on build-ids (build_needs_id_1524)
-[0mCompiling "js/main.js" from ["src"]...
-[32mSuccessfully compiled "js/main.js" in 0.152 seconds.[0m
-notifying browser that file changed:  out/goog/deps.js
-notifying browser that file changed:  out/cljs_deps.js
-notifying browser that file changed:  /testing/core.js
