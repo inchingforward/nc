@@ -8,7 +8,7 @@ A Random Walker after 10 minutes of walking.
 
 ## Online Example
 
-An online example can be found [here](http://inchingforward.github.io/nc/).
+An online example can be found [here](http://inchingforward.github.io/nc/walker/).
 
 ## To Run
 
