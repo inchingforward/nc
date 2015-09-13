@@ -2,9 +2,7 @@
 
 A random distribution sketch based on an example in the book Nature of Code.
 
-FIXME: Image of randomdist running
-
-FIXME: Image caption
+![Random Distribution](randomdist.png)
 
 ## Online Example
 
