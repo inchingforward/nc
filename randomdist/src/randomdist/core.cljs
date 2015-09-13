@@ -3,18 +3,24 @@
             [quil.middleware :as m]))
 
 (defn setup []
-  ; Initialize a vector of 20 zeroes.
+  ;; Initialize a vector of 20 zeroes.
   {:random-counts (vec (take 20 (repeat 0)))})
 
 (defn update-state [state]
-  ; FIXME:  increment one number in the vector randomly
-  state)
+  (let [index (rand-int (count (:random-counts state)))]
+    (update-in state [:random-counts index] #(inc %))))
 
 (defn draw-state [state]
-  ; FIXME: draw a rect for each random-count
-  (q/background 255)
-  (q/stroke 0)
-  (q/fill 175))
+  (let [counts (:random-counts state)
+        rect-width (/ (q/width) (count counts))] 
+    (q/background 255)
+    (q/stroke 0)
+    (q/fill 175)
+    (doseq [index (range (count counts))]
+      (q/rect (* index rect-width)
+              (- (q/height) (inc (get counts index)))
+              (- rect-width 1)
+              (get counts index)))))
 
 (q/defsketch randomdist
   :host "randomdist"
