@@ -1,0 +1,53 @@
+(def nums (vec (repeat 0 12)))
+nums
+(def nums (vec (repeat 10 0)))
+nums
+(assoc-in nums [0] 2)
+(update-in nums [0] #(inc %))
+(rand-nth [1 2  3])
+(defn update-state [state]
+  (let [index (rand-nth (:random-counts state))]
+    (update-in state [index] #(inc %))))
+(defn state (vec (repeat 10 0)))
+(def state (vec (repeat 10 0)))
+state
+(upate-state state)
+(update-state state)
+(defn update-state [state]
+(def state {:random-counts (vec (repeat 10 0))})
+state
+(update-state state)
+(rand-nth (:random-counts state))
+(:random-counts state)
+(rand-nth (:random-counts state))
+(rand-int 0 (count (:random-counts state)))
+(rand-int (count (:random-counts state)))
+(defn update-state [state]
+  (let [index (rand-int (count (:random-counts state)))]
+    (update-in state [index] #(inc %))))
+  ; FIXME:  increment one number in the vector randomly
+  state)
+(defn update-state [state]
+  (let [index (rand-int (count (:random-counts state)))]
+    (update-in state [index] #(inc %))))
+(update-state state)
+state
+(:random-counts state)
+(rand-int (count (:random-counts state)))
+(defn update-state [state]
+  (let [index (rand-int (count (:random-counts state)))]
+    (println index)
+    (update-in state [index] #(inc %))))
+(update-state state)
+(upate-in state [0] #(inc %))
+(update-in state [0] #(inc %))
+state
+(update-in state [:random-counts 0] #(inc %))
+(defn update-state [state]
+  (let [index (rand-int (count (:random-counts state)))]
+    (update-in state [:random-counts index] #(inc %))))
+(update-state state)
+(defn print-it [x] (println x))
+(map print-it (:random-counts state))
+(0 [0 1 3])
+(doc get)
