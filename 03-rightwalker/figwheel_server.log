@@ -1,0 +1,45 @@
+Figwheel: focusing on build-ids (build_needs_id_1420)
+[0mCompiling "js/main.js" from ["src"]...
+[32mSuccessfully compiled "js/main.js" in 0.25 seconds.[0m
+notifying browser that file changed:  out/goog/deps.js
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  /rightwalker/core.js
+Figwheel: focusing on build-ids (build_needs_id_1420)
+[0mCompiling "js/main.js" from ["src"]...
+[32mSuccessfully compiled "js/main.js" in 0.146 seconds.[0m
+notifying browser that file changed:  out/goog/deps.js
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  /rightwalker/core.js
+[0mCompiling "js/main.js" from ["src"]...
+[31mCompiling "js/main.js" failed.[0m
+java.io.FileNotFoundException: src (No such file or directory)
+ at java.io.FileInputStream.open (FileInputStream.java:-2)
+    java.io.FileInputStream.<init> (FileInputStream.java:131)
+    clojure.java.io/fn (io.clj:229)
+    clojure.java.io$fn__9098$G__9091__9105.invoke (io.clj:69)
+    clojure.java.io/fn (io.clj:165)
+    clojure.java.io$fn__9111$G__9087__9118.invoke (io.clj:69)
+    clojure.java.io$reader.doInvoke (io.clj:102)
+    clojure.lang.RestFn.invoke (RestFn.java:410)
+    cljs.closure$compile_file.invoke (closure.clj:376)
+    cljs.closure$eval3467$fn__3468.invoke (closure.clj:426)
+    cljs.closure$eval3420$fn__3421$G__3411__3428.invoke (closure.clj:331)
+    cljs.closure$eval3480$fn__3481.invoke (closure.clj:439)
+    cljs.closure$eval3420$fn__3421$G__3411__3428.invoke (closure.clj:331)
+    clojurescript_build.core.CompilableSourcePaths/fn (core.clj:19)
+    clojure.core$map$fn__4551.invoke (core.clj:2620)
+    clojure.lang.LazySeq.sval (LazySeq.java:40)
+    clojure.lang.LazySeq.seq (LazySeq.java:49)
+    clojure.lang.RT.seq (RT.java:507)
+    clojure.core/seq (core.clj:135)
+    clojure.core$apply.invoke (core.clj:628)
+    clojure.core$mapcat.doInvoke (core.clj:2658)
+    clojure.lang.RestFn.invoke (RestFn.java:423)
+    clojurescript_build.core.CompilableSourcePaths._compile (core.clj:19)
+    cljs.closure$build.invoke (closure.clj:1476)
+    clojurescript_build.core$build_source_paths_STAR_.invoke (core.clj:153)
+    figwheel_sidecar.auto_builder$default_build_options$fn__17591.invoke (auto_builder.clj:77)
+    figwheel_sidecar.auto_builder$insert_figwheel_connect_script$fn__17624.invoke (auto_builder.clj:179)
+    figwheel_sidecar.auto_builder$warning$fn__17588.invoke (auto_builder.clj:73)
+    clojurescript_build.auto$time_build$fn__17384.invoke (auto.clj:55)
+    clojurescript_build.auto$after$fn__17390.invoke (auto.clj:64)
