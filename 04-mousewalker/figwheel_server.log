@@ -1,0 +1,17 @@
+Figwheel: focusing on build-ids (build_needs_id_1420)
+[0mCompiling "js/main.js" from ["src"]...
+[31mCompiling "js/main.js" failed.[0m
+ERROR: Unmatched delimiter ) on file /Users/mike/Documents/proj/personal/nc/04-mousewalker/src/mousewalker/core.cljs, line 23, column 23
+[0mCompiling "js/main.js" from ["src"]...
+[31mCompiling "js/main.js" failed.[0m
+ERROR: Unmatched delimiter ) on file /Users/mike/Documents/proj/personal/nc/04-mousewalker/src/mousewalker/core.cljs, line 28, column 23
+Figwheel: focusing on build-ids (build_needs_id_1420)
+[0mCompiling "js/main.js" from ["src"]...
+[31mCompiling "js/main.js" failed.[0m
+ERROR: Unmatched delimiter ) on file /Users/mike/Documents/proj/personal/nc/04-mousewalker/src/mousewalker/core.cljs, line 28, column 23
+Figwheel: focusing on build-ids (build_needs_id_1420)
+[0mCompiling "js/main.js" from ["src"]...
+[32mSuccessfully compiled "js/main.js" in 0.154 seconds.[0m
+notifying browser that file changed:  out/goog/deps.js
+notifying browser that file changed:  out/cljs_deps.js
+notifying browser that file changed:  /mousewalker/core.js
