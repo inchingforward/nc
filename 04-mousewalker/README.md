@@ -1,12 +1,10 @@
 # mousewalker
 
-A sketch based on an example in the book [The Nature of Code](http://natureofcode.com).  There's a 50% probability that the walker will follow the mouse position.
-
-FIXME: Image
+This sketch is a walker that has a 50% probability of moving towards the mouse position.
 
 ## Online Example
 
-An online example can be found [FIXME: link](FIXME: url).
+An online example can be found [here](http://inchingforward.github.io/nc/mousewalker/).
 
 ## To Run
 
