@@ -5,14 +5,24 @@
 (defn setup []
   (q/background 255)
   (q/frame-rate 30)
+  (q/stroke 0)
   {:x 10 :y 10})
 
+(defn move-closer [from-pos to-pos]
+  (if (< from-pos to-pos)
+      (inc from-pos)
+      (dec from-pos)))
+
 (defn update-state [state]
-  {:x (q/random 500) 
-   :y (q/random 500)})
+  (let [mousex (q/mouse-x)
+        mousey (q/mouse-y)
+        r      (q/random 1)]
+    (if (< r .5) 
+      {:x (move-closer (:x state) mousex) 
+       :y (move-closer (:y state) mousey)}
+      state)))
 
 (defn draw-state [state]
-  (q/stroke 0)
   (q/point (:x state) (:y state)))
 
 (q/defsketch mousewalker
