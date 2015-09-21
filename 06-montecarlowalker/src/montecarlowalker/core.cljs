@@ -7,9 +7,16 @@
   (q/frame-rate 30)
   {:x 10 :y 10})
 
+(defn montecarlo []
+  ;; loop until found
+  )
+
 (defn update-state [state]
-  {:x (q/random 500) 
-   :y (q/random 500)})
+  (let [stepsize (montecarlo)
+        stepx (q/random (- stepsize) stepsize)
+        stepy (q/random (- stepsize) stepsize)]
+    {:x (+ (:x state) stepx)
+     :y (+ (:y state) stepy)}))
 
 (defn draw-state [state]
   (q/stroke 0)
